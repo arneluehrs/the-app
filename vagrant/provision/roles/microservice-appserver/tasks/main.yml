@@ -11,7 +11,7 @@
 - name: add user logstash to the www-data group
   user:
     name: logstash
-    groups: www-data
+    groups: www-data,adm
     append: yes
 
 - name: set logstash configuration
