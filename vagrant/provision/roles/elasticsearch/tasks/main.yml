@@ -43,8 +43,8 @@
 
 - name: ensure directory is owned by elasticsearch
   file:
-    src: /usr/share/elasticsearch/data
-    dest: /var/lib/elasticsearch
+    src: /var/lib/elasticsearch
+    dest: /usr/share/elasticsearch/data
     owner: elasticsearch
     group: elasticsearch
     state: link
