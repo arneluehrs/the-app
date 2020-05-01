@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -80,3 +80,10 @@ patch:
   'npm:tunnel-agent:20170305':
     - hubot-flowdock > flowdock > request > tunnel-agent:
         patched: '2019-10-10T20:08:07.727Z'
+  SNYK-JS-LODASH-567746:
+    - hubot-slack > lodash:
+        patched: '2020-05-01T03:32:45.412Z'
+    - hubot-slack > @slack/client > lodash:
+        patched: '2020-05-01T03:32:45.412Z'
+    - hubot-flowdock > flowdock > request > form-data > async > lodash:
+        patched: '2020-05-01T03:32:45.412Z'
